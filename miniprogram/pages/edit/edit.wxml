@@ -1,0 +1,21 @@
+<view class="main-container">
+  <view class="box-title">日志任务</view>
+  <view class="input-box name">
+    <input type="text" value="{{reminder.event}}" placeholder="为日志起个名字吧" bindblur="titleChange"  bindinput="onEventInput" />
+  </view>
+  
+<!--时间-->
+  <view class="form-item">
+    <text>截止时间</text>
+    <picker mode="date" bindchange="onDateChange">
+    <view>选择日期: {{date}}</view>
+  </picker>
+  <picker mode="time" bindchange="onTimeChange">
+    <view>选择时间: {{time}}</view>
+  </picker>
+  </view>
+  <button bindtap="updateReminder">更新打卡</button>
+</view>
+
+
+

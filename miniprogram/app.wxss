@@ -1,0 +1,44 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sign-button {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  background-color: #1aad19;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.info-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}

@@ -1,0 +1,95 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+ 
+/* 头部样式 */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+ 
+/* 添加打卡按钮样式 */
+.add-button {
+  padding: 10px 20px;
+  background-color: #b2d0d9;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+ 
+/* 列表样式 */
+.list {
+  margin-bottom: 20px;
+}
+ 
+/* 提醒项样式 */
+.reminder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 10rpx;
+  border-bottom: 2px solid pink;
+  width: 600rpx;
+  height: 100rpx;
+}
+ 
+/* 事件文本样式 */
+.event {
+  flex: 2;
+  font-size: 16px;
+  font-weight: bold;
+}
+ 
+/* 时间文本样式 */
+.time {
+  flex: 1;
+  font-size: 14px;
+  color: #666;
+}
+ 
+/* 状态文本样式 */
+.status {
+  flex: 1;
+  font-size: 14px;
+  color: #999;
+}
+ 
+/* 按钮样式（完成、打卡失败、编辑、删除） */
+.reminder-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+ 
+/* 按钮悬停样式（微信小程序中通过active状态模拟） */
+.reminder-item button:active {
+  background-color: #e0e0e0;
+}
+.floating-signin-button {
+  position: fixed;
+  height: 100px;
+  width: 150px;
+  left: 275rpx;
+  top:300rpx;
+  background-color: #a1c4e9; /* 按钮颜色 */
+  color: white; /* 字体颜色 */
+  border: none; /* 无边框 */
+  border-radius: 25px; /* 圆角 */
+  padding: 30px 20px; /* 内边距 */
+  font-size: 16px; /* 字体大小 */
+  z-index: 1000; /* 确保按钮在最上层 */
+}

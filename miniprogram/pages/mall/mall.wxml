@@ -1,0 +1,37 @@
+<view class="container">
+  <!-- 总积分框 -->
+  <view class="points-box">
+    <text>总积分: {{userPoints}}</text>
+  </view>
+
+  <!-- 大框 -->
+  <view class="theme-box">
+    <block wx:for="{{themes}}" wx:key="index">
+      <view class="theme-item" style="background-color: {{item.rgb}};">
+        <view class="tview">
+          <text>名称: {{item.name}}</text>
+        </view>
+        <view class="tview">
+          <text>所需积分: {{item.pointsNeed}}</text>
+        </view>        
+        <view class="button-group">
+          <button bindtap="onBuy"  data-index = "{{index}}" disabled="{{item.isBought}}">购买</button>
+          <button bindtap="onChange" data-index = "{{index}}" disabled="{{item.isChange}}">更换</button>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="view-genghuan">
+  <button class="genghuan" bind:tap="getyuan">一键更换原皮</button>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+

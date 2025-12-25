@@ -1,0 +1,61 @@
+
+.container {
+  padding: 20px;
+}
+
+.points-box {
+  margin-bottom: 20px;
+  font-size: 18px;
+  border:rgb(0, 0, 0) solid 1px;
+  border-radius: 10px;
+  padding: 15px;/*内边距*/
+  margin:10px;/*外边距*/
+  width:90%;
+  max-width:600px;/*最大宽度*/
+}
+
+.theme-box {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;/*内边距*/
+  margin:10px;/*外边距*/
+  width:90%;
+  max-width:600px;/*最大宽度*/
+}
+
+.theme-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: #BAC8DA;
+}
+
+.button-group {
+  margin-top: 10px;
+  border:1px solid rgb(0, 0, 0);
+  background-color: #ffffff; /* 设置背景颜色为白色 */
+}
+
+.status-text {
+  color: rgba(0, 128, 0, 0.856); /* 购买状态为绿色 */
+  margin-top: 5px;
+}
+
+.tview {
+  margin-bottom: 5px; /* 添加下边距 */
+}
+.view-genghuan{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 15px;/*内边距*/
+  margin:10px;/*外边距*/
+  width:90%;
+  max-width:600px;/*最大宽度*/
+  background-color: bisque;
+}
+.genghuan{
+  margin-top: 10px;
+  border:1px solid rgb(0, 0, 0);
+  background-color: #ffffff; /* 设置背景颜色为白色 */
+}

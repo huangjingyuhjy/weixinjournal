@@ -1,0 +1,48 @@
+/* pages/recharge/recharge.wxss */
+.container {
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.recharge-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option {
+  width: 48%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.option.selected {
+  border-color: #07C160;
+  background-color: #f0fff4;
+}
+
+.custom-amount {
+  margin-bottom: 30px;
+}
+
+.custom-amount input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.recharge-btn {
+  background-color: #07C160;
+  color: white;
+  border-radius: 25px;
+}

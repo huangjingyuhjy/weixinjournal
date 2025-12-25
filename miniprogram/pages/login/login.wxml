@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class="container" style="background-color: {{rgb}};">
+<image class="touxiang" src="{{avatarUrl}}" mode="aspectFill"/>
+<button bind:tap="goLogin" wx:if="{{!getdeng}}">用户登录</button>
+<text wx:if="{{getdeng}}">你好，{{nickname}}</text>
+</view>
+<!-- 弹窗 -->
+<view class="pop_root" hidden="{{ishidden}}">
+<view class="pop_content">
+<view class="pot_tip">授权登录</view>
+<button open-type="chooseAvatar" bindchooseavatar="getAvatar" class="ipbutton">
+获取头像</button>
+<input  class="imp" placeholder="获取昵称" bindblur="getName" type="nickname"/>
+<view class="pop_bot">
+<button class="btn" bind:tap="potNo">取消</button>
+<button class="btn_log" bind:tap="potYes">确定</button>
+</view>
+</view>
+</view>
+
+

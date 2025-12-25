@@ -1,0 +1,34 @@
+<button class="floating-signin-button" bindtap="goToSignIn" wx:if="{{!getqian}}">签到</button>
+<view>
+  <view class="container">
+  <view class="header">
+    <button class="add-button" bindtap="goToAdd">添加打卡</button>
+  </view>
+  <view class="list">
+    <block wx:for="{{reminders}}" wx:key="id">
+      <view class="reminder-item" style="background-color: {{rgb}};">
+        <text class="event">{{item.event}}</text>
+        <text class="time">{{item.time}}</text>
+        <text class="status">{{item.completed ? '已完成' : (item.failed ? '打卡失败' : '未完成')}}</text>
+        <button bindtap="completeReminder" data-id="{{item._id}}" wx:if="{{!item.completed && !item.failed}}">完成</button>
+        <counter count="{{count}}"></counter>
+        <button bindtap="editReminder" data-id="{{item._id}}" wx:if="{{!item.completed && !item.failed}}">编辑</button>
+        <button bindtap="deleteReminder" data-id="{{item._id}}" wx:if="{{!item.completed && !item.failed}}">删除</button>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- 悬浮签到按钮 -->
+</view>
+<view class="container">
+  <view class="list">
+  <text>完成日志查询</text>
+<block wx:for="{{reminders_com}}" wx:key="id">
+  <view class="reminder-item" style="background-color: {{rgb}};">
+  <text class="event">{{item.event}}</text>
+        <text class="time">{{item.time}}</text>
+        <text class="status">{{item.completed ? '已完成' : (item.failed ? '打卡失败' : '未完成')}}</text>
+      </view>
+</block>
+</view>
+</view>

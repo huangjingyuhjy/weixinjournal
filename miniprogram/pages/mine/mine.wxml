@@ -1,0 +1,21 @@
+<!--pages/mine/mine.wxml-->
+<!--pages/login/login.wxml-->
+<view class="container" style="background-color: {{rgb}};">
+<image class="touxiang" src="{{avatarUrl}}" mode="aspectFill"/>
+<text>你好，{{nickname}}</text>
+</view>
+<view class="kanjian" style="background-color: {{rgb}};">
+<!-- 可视化数据  看组件 -->
+<text class="count-text completed">已完成数量: {{completedCount}}</text>
+  <view class="failed-count">
+    <text class="count-text failed">已失败数量: {{failedCount}}</text>
+  </view>
+  <canvas canvas-id="pieChart" style="width: 300px; height: 300px; margin-top: 20px;"></canvas>
+</view>
+<view class="mine" style="background-color: {{rgb}};">
+  <button bindtap="tuichu" class = "liedui">修改头像和昵称</button>
+  <button bindtap="mallGet" class="liedui">商城</button> <!-- 添加 bindtap -->
+  <button class="liedui" bind:tap="adminget">积分充值</button>
+  <button class="liedui" bind:tap="lianxiget">联系客服及常见问题</button>
+  <button class="liedui" bind:tap="signget">查看签到记录和积分获取</button>
+  </view>

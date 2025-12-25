@@ -1,0 +1,17 @@
+<view>
+  <view class="sign-container">
+    <button bindtap="signIn" class="sign-button" disabled="{{hasSignedToday}}" style="{{hasSignedToday ? 'background-color: gray; color: white;' : ''}}">
+      {{hasSignedToday ? '已签到' : '立即签到'}}
+    </button>
+    <view class="info-box">
+      <text>日期: {{currentDate}}</text>
+      <text>积分: +20</text>
+    </view>
+    <view class="info-box">
+      <text>总签到天数: {{totalSignDays}}</text>
+      <text>获得积分: {{totalPoints}}</text>
+    </view>
+  </view>
+</view>
+
+

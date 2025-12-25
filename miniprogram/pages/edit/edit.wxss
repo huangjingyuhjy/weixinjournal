@@ -1,0 +1,97 @@
+/* pages/edit/edit.wxss */
+.main-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+ 
+/* 标题样式 */
+.box-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+/* 输入框容器样式 */
+.input-box {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+ 
+/* 输入框样式（包括文本和文本区域） */
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 16px;
+  color: #333;
+}
+ 
+/* 输入框占位符样式 */
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+  color: #999;
+}
+ 
+/* 表单项样式（日期和时间选择器） */
+.form-item {
+  margin-bottom: 20px;
+}
+ 
+.form-item text {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+ 
+/* picker组件的样式（注意：picker的样式在微信小程序中有限制，不能直接修改其内部样式） */
+.form-item picker {
+  width: 100%;
+  /* 这里不能直接设置picker的高度，但可以通过外部view来模拟 */
+  position: relative;
+}
+ 
+.form-item picker view {
+  /* 这个view是用来显示选择后的日期和时间的 */
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+ 
+/* 按钮样式 */
+button {
+  width: 100%;
+  background-color: #007aff;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+ 
+/* 按钮悬停样式（微信小程序中不直接支持:hover，但可以通过其他方式模拟） */
+button:active {
+  background-color: #005bb5;
+}

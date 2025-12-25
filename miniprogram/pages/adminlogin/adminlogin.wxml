@@ -1,0 +1,27 @@
+<!-- pages/recharge/recharge.wxml -->
+<view class="container">
+  <view class="header">
+    <text>当前积分：{{currentPoints}}</text>
+  </view>
+  
+  <view class="recharge-options">
+    <block wx:for="{{rechargeOptions}}" wx:key="id">
+      <view 
+        class="option {{selectedId === item.id ? 'selected' : ''}}" 
+        bindtap="selectOption" 
+        data-id="{{item.id}}"
+      >
+        <text>{{item.points}}积分</text>
+        <text>¥{{item.price}}</text>
+      </view>
+    </block>
+  </view>
+  
+  <view class="custom-amount">
+    <text>自定义金额：</text>
+    <input type="number" placeholder="输入充值金额" bindinput="inputCustomAmount"/>
+  </view>
+  
+  <button class="recharge-btn" bindtap="handleRecharge">立即充值</button>
+</view>
+

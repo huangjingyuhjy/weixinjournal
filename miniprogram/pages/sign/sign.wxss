@@ -1,0 +1,6 @@
+/* pages/sign/sign.wxss */
+.sign-button{
+  height: 100px;
+  width: 100px;
+  background-color: #BAD1B9;
+}

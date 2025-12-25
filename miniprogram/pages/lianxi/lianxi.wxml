@@ -1,0 +1,24 @@
+<!--pages/lianxi/lianxi.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">联系客服</text>
+  </view>
+
+  <view class="contact">
+    <text class="contact-title">联系方式</text>
+    <text class="contact-info">微信号：wxid_22rad40wch1m22</text>
+    <text class="contact-info">电话：198-0827-7086</text>
+  </view>
+
+  <view class="faq">
+    <text class="faq-title">常见问题</text>
+    <view class="faq-item">
+      <text class="question">Q1: 如何修改昵称和头像</text>
+      <text class="answer">A: 点击我的->修改昵称和头像按钮，即可选择使用微信头像及昵称或者使用自定义的昵称和头像。</text>
+    </view>
+    <view class="faq-item">
+      <text class="question">Q2: 积分如何获取？有什么用处</text>
+      <text class="answer">A: 积分可以通过每日签到和完成打卡任务获取，积分可以在我的->商店里购买字体和主题。</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,63 @@
+/* pages/lianxi/lianxi.wxss */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.faq {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faq-item {
+  margin-top: 10px;
+}
+
+.question {
+  font-weight: bold;
+  color: #007aff;
+}
+
+.answer {
+  color: #666;
+  margin-top: 5px;
+}
